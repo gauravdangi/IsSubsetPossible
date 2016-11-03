@@ -1,5 +1,5 @@
 /*
-Author Gaurav Dangi
+Author : Gaurav Dangi
  */
 package sumsubset;
 import java.util.*;
