@@ -18,7 +18,7 @@ Enter number
 13
 
 
-Subset of '13' possible?
+Is Subset of '13' possible?
 
  ---->  true
 ------------------------------
@@ -36,6 +36,6 @@ Enter number
 13
 
 
-Subset of '13' possible?
+Is Subset of '13' possible?
 
  ---->  true
