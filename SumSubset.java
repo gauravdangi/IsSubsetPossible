@@ -20,7 +20,7 @@ public class SumSubset {
         
         System.out.println("Enter number");
         int num = scan.nextInt();
-        System.out.println("\n\nSubset of '"+num+"' possible?\n ---->  "+SS.possible(arr,num));
+        System.out.println("\n\nIs Subset of '"+num+"' possible?\n ---->  "+SS.possible(arr,num));
         
         
         
