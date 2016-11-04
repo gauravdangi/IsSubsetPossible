@@ -32,8 +32,9 @@ Enter number
 Is Subset of '13' possible?
 
  ---->  true
-------------------------------
-
+ 
+ --------------------------------------------------------------------------------
+ 
 Enter size of array
 
 2
@@ -50,3 +51,21 @@ Enter number
 Is Subset of '13' possible?
 
  ---->  true
+ 
+ --------------------------------------------------------------------------------
+ 
+Enter size of array
+
+4
+
+Enter array of integers
+
+5 7 11 17
+Enter number
+
+13
+
+
+Is Subset of '13' possible?
+
+ ---->  false
