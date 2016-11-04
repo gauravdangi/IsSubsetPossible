@@ -61,6 +61,7 @@ Enter size of array
 Enter array of integers
 
 5 7 11 17
+
 Enter number
 
 13
