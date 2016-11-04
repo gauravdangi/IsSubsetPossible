@@ -1,5 +1,5 @@
 /*
-Author : Gaurav Dangi
+Author Gaurav Dangi
  */
 package sumsubset;
 import java.util.*;
@@ -20,20 +20,21 @@ public class SumSubset {
         
         System.out.println("Enter number");
         int num = scan.nextInt();
-        System.out.println("\n\nIs Subset of '"+num+"' possible?\n ---->  "+SS.possible(arr,num));
+        System.out.println("\n\nSubset of '"+num+"' possible?\n ---->  "+SS.possible(arr,num));
         
         
         
     }
     
-      public boolean possible(int[] arr,int num){
+    public boolean possible(int[] arr,int num){
         int small = smallest(arr);
         if(check(arr,1)) return true;
         for(int i=0;i<arr.length;i++){
           if(check(arr,num%arr[i])) return true;
           
             else if(check(arr,(arr[i]+num%arr[i]))) return true;
-           
+            else if(divisible(arr,num%arr[i])) return true;
+          
         }
         return false;
     }
@@ -53,5 +54,12 @@ public class SumSubset {
       }
      }
      return small;
+    }
+    
+    public static boolean divisible(int[] arr,int num){
+        for(int i=0;i<arr.length;i++){
+          if(num%arr[i]==0) return true;
+        }
+        return false;
     }
 }
