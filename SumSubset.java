@@ -26,19 +26,14 @@ public class SumSubset {
         
     }
     
-    public boolean possible(int[] arr,int num){
+      public boolean possible(int[] arr,int num){
         int small = smallest(arr);
         if(check(arr,1)) return true;
         for(int i=0;i<arr.length;i++){
           if(check(arr,num%arr[i])) return true;
-          else{
-            if(num%arr[i]>small){
-              if(check(arr,num%small)) return true;
-            }
-            else{
-             if(check(arr,(arr[i]+num%arr[i]))) return true;
-            }
-          }
+          
+            else if(check(arr,(arr[i]+num%arr[i]))) return true;
+           
         }
         return false;
     }
